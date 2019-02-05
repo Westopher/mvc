@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SaC-5U-6KJ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="transactionCell" rowHeight="100" id="HPo-JK-8bF" customClass="TransactionTableViewCell" customModule="MVC" customModuleProvider="target">
@@ -69,13 +69,23 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="BB7-3D-gls"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiH-iy-eWw">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SaC-5U-6KJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0TM-Ce-Ut2"/>
+                            <constraint firstItem="xiH-iy-eWw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5h6-YH-B6t"/>
+                            <constraint firstItem="xiH-iy-eWw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BQc-ZJ-5pe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xiH-iy-eWw" secondAttribute="trailing" id="DHs-fT-UJY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SaC-5U-6KJ" secondAttribute="trailing" id="Mtj-kY-zpZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SaC-5U-6KJ" secondAttribute="bottom" id="XoU-yQ-tUZ"/>
-                            <constraint firstItem="SaC-5U-6KJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pBt-HK-oIf"/>
+                            <constraint firstItem="SaC-5U-6KJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pBt-HK-oIf"/>
+                            <constraint firstItem="SaC-5U-6KJ" firstAttribute="top" secondItem="xiH-iy-eWw" secondAttribute="bottom" id="zYW-Ec-ehZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

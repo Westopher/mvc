@@ -31,9 +31,12 @@ class TransactionsViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //creating an object of transactionatableviewcell(see the model), called cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! TransactionTableViewCell
-        cell.amountLabel.text = "$\(transactions[indexPath.row].amount)"
-        cell.dateLabel.text = transactions[indexPath.row].date.description
-        cell.notesLabel.text = transactions[indexPath.row].notes
+        
+        let transactionIndexRowPath = transactions[indexPath.row]
+        
+        cell.amountLabel.text = "$\(transactionIndexRowPath.amount)"
+        cell.dateLabel.text = transactionIndexRowPath.date.description
+        cell.notesLabel.text = transactionIndexRowPath.notes
         
         
         return cell
