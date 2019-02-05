@@ -21,9 +21,6 @@ class TransactionsViewController: UIViewController, UITableViewDataSource, UITab
         Transaction(amount: 66.66, date: Date(), notes: "Lemon"),
         Transaction(amount: 77.77, date: Date(), notes: "Lime")
     ]
-        
-    
-    
     
     
     override func viewDidLoad() {
@@ -32,16 +29,23 @@ class TransactionsViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = "hello world"
+        //creating an object of transactionatableviewcell(see the model), called cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! TransactionTableViewCell
+        cell.amountLabel.text = "$\(transactions[indexPath.row].amount)"
+        cell.dateLabel.text = transactions[indexPath.row].date.description
+        cell.notesLabel.text = transactions[indexPath.row].notes
+        
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return transactions.count
     }
     
-   
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
 
     
