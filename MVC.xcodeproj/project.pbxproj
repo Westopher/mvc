@@ -13,6 +13,7 @@
 		3D7668F8220A1AB7005883E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F6220A1AB7005883E9 /* LaunchScreen.storyboard */; };
 		3D766901220A1B4A005883E9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766900220A1B4A005883E9 /* Transaction.swift */; };
 		3D766904220A1C16005883E9 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766903220A1C16005883E9 /* TransactionsViewController.swift */; };
+		3D766907220A2325005883E9 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766906220A2325005883E9 /* TransactionTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3D7668F9220A1AB7005883E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D766900220A1B4A005883E9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		3D766903220A1C16005883E9 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		3D766906220A2325005883E9 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3D766900220A1B4A005883E9 /* Transaction.swift */,
+				3D766905220A22F6005883E9 /* Views */,
 				3D766902220A1BE8005883E9 /* Controllers */,
 			);
 			path = Models;
@@ -81,6 +84,14 @@
 				3D766903220A1C16005883E9 /* TransactionsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3D766905220A22F6005883E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D766906220A2325005883E9 /* TransactionTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			files = (
 				3D7668EE220A1AB5005883E9 /* AppDelegate.swift in Sources */,
 				3D766901220A1B4A005883E9 /* Transaction.swift in Sources */,
+				3D766907220A2325005883E9 /* TransactionTableViewCell.swift in Sources */,
 				3D766904220A1C16005883E9 /* TransactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
