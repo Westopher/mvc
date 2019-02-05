@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3D7668EE220A1AB5005883E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7668ED220A1AB5005883E9 /* AppDelegate.swift */; };
-		3D7668F0220A1AB5005883E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7668EF220A1AB5005883E9 /* ViewController.swift */; };
 		3D7668F3220A1AB5005883E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F1220A1AB5005883E9 /* Main.storyboard */; };
 		3D7668F5220A1AB7005883E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F4220A1AB7005883E9 /* Assets.xcassets */; };
 		3D7668F8220A1AB7005883E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F6220A1AB7005883E9 /* LaunchScreen.storyboard */; };
+		3D766901220A1B4A005883E9 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766900220A1B4A005883E9 /* Transaction.swift */; };
+		3D766904220A1C16005883E9 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D766903220A1C16005883E9 /* TransactionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D7668EA220A1AB5005883E9 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7668ED220A1AB5005883E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D7668EF220A1AB5005883E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3D7668F2220A1AB5005883E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D7668F4220A1AB7005883E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D7668F7220A1AB7005883E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D7668F9220A1AB7005883E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D766900220A1B4A005883E9 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		3D766903220A1C16005883E9 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		3D7668EC220A1AB5005883E9 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				3D7668FF220A1B34005883E9 /* Models */,
 				3D7668ED220A1AB5005883E9 /* AppDelegate.swift */,
-				3D7668EF220A1AB5005883E9 /* ViewController.swift */,
 				3D7668F1220A1AB5005883E9 /* Main.storyboard */,
 				3D7668F4220A1AB7005883E9 /* Assets.xcassets */,
 				3D7668F6220A1AB7005883E9 /* LaunchScreen.storyboard */,
 				3D7668F9220A1AB7005883E9 /* Info.plist */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		3D7668FF220A1B34005883E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D766900220A1B4A005883E9 /* Transaction.swift */,
+				3D766902220A1BE8005883E9 /* Controllers */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3D766902220A1BE8005883E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D766903220A1C16005883E9 /* TransactionsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7668F0220A1AB5005883E9 /* ViewController.swift in Sources */,
 				3D7668EE220A1AB5005883E9 /* AppDelegate.swift in Sources */,
+				3D766901220A1B4A005883E9 /* Transaction.swift in Sources */,
+				3D766904220A1C16005883E9 /* TransactionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
