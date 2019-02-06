@@ -35,8 +35,8 @@ class TransactionsViewController: UIViewController, UITableViewDataSource, UITab
         let transactionIndexRowPath = transactions[indexPath.row]
         
         cell.amountLabel.text = "$\(transactionIndexRowPath.amount)"
-        cell.dateLabel.text = transactionIndexRowPath.date.description
         cell.notesLabel.text = transactionIndexRowPath.notes
+        cell.dateLabel.text = transactionIndexRowPath.date.description
         
         
         return cell
