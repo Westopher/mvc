@@ -105,14 +105,38 @@
             </objects>
             <point key="canvasLocation" x="937" y="-564"/>
         </scene>
-        <!--View Controller-->
+        <!--New Trans View Controller-->
         <scene sceneID="6sN-qy-2f9">
             <objects>
-                <viewController id="Tyw-kB-Yz8" sceneMemberID="viewController">
+                <viewController id="Tyw-kB-Yz8" customClass="NewTransViewController" customModule="MVC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GJe-Qg-GY9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="CGB-XM-VP5">
+                                <rect key="frame" x="20" y="84" width="335" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wqq-g0-YSk">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34q-ly-Cxl">
+                                        <rect key="frame" x="0.0" y="90" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wgi-yg-7Jp" firstAttribute="trailing" secondItem="CGB-XM-VP5" secondAttribute="trailing" constant="20" id="PSC-bA-O1j"/>
+                            <constraint firstItem="CGB-XM-VP5" firstAttribute="top" secondItem="wgi-yg-7Jp" secondAttribute="top" constant="20" id="grR-2u-aEs"/>
+                            <constraint firstItem="CGB-XM-VP5" firstAttribute="leading" secondItem="wgi-yg-7Jp" secondAttribute="leading" constant="20" id="xbZ-X7-VRq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wgi-yg-7Jp"/>
                     </view>
                 </viewController>
