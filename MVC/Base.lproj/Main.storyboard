@@ -114,27 +114,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="CGB-XM-VP5">
-                                <rect key="frame" x="20" y="84" width="335" height="120"/>
+                                <rect key="frame" x="20" y="84" width="335" height="160"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wqq-g0-YSk">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Og9-u0-mIh"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="34q-ly-Cxl">
-                                        <rect key="frame" x="0.0" y="90" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="110" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ksw-AY-69w"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEH-G4-8LH">
+                                <rect key="frame" x="20" y="284" width="335" height="41"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="21"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="wgi-yg-7Jp" firstAttribute="trailing" secondItem="CGB-XM-VP5" secondAttribute="trailing" constant="20" id="PSC-bA-O1j"/>
+                            <constraint firstItem="BEH-G4-8LH" firstAttribute="top" secondItem="CGB-XM-VP5" secondAttribute="bottom" constant="40" id="XqA-MW-8hm"/>
+                            <constraint firstItem="BEH-G4-8LH" firstAttribute="centerX" secondItem="CGB-XM-VP5" secondAttribute="centerX" id="YA0-kI-IE6"/>
                             <constraint firstItem="CGB-XM-VP5" firstAttribute="top" secondItem="wgi-yg-7Jp" secondAttribute="top" constant="20" id="grR-2u-aEs"/>
+                            <constraint firstItem="BEH-G4-8LH" firstAttribute="leading" secondItem="wgi-yg-7Jp" secondAttribute="leading" constant="20" id="pfV-fQ-wcy"/>
+                            <constraint firstItem="wgi-yg-7Jp" firstAttribute="trailing" secondItem="BEH-G4-8LH" secondAttribute="trailing" constant="20" id="u8w-Ja-9hY"/>
                             <constraint firstItem="CGB-XM-VP5" firstAttribute="leading" secondItem="wgi-yg-7Jp" secondAttribute="leading" constant="20" id="xbZ-X7-VRq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wgi-yg-7Jp"/>
@@ -142,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="27q-Gi-vY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1644" y="-564"/>
+            <point key="canvasLocation" x="1644" y="-564.46776611694156"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="spY-ez-iDT">
