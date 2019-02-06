@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0732EB220B8C67001CE374 /* TransLedger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0732EA220B8C67001CE374 /* TransLedger.swift */; };
 		3D7668EE220A1AB5005883E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7668ED220A1AB5005883E9 /* AppDelegate.swift */; };
 		3D7668F3220A1AB5005883E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F1220A1AB5005883E9 /* Main.storyboard */; };
 		3D7668F5220A1AB7005883E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D7668F4220A1AB7005883E9 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0732EA220B8C67001CE374 /* TransLedger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransLedger.swift; sourceTree = "<group>"; };
 		3D7668EA220A1AB5005883E9 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D7668ED220A1AB5005883E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D7668F2220A1AB5005883E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				3D766900220A1B4A005883E9 /* Transaction.swift */,
+				3D0732EA220B8C67001CE374 /* TransLedger.swift */,
 				3D766905220A22F6005883E9 /* Views */,
 				3D766902220A1BE8005883E9 /* Controllers */,
 			);
@@ -167,6 +170,7 @@
 			files = (
 				3D7668EE220A1AB5005883E9 /* AppDelegate.swift in Sources */,
 				3D766901220A1B4A005883E9 /* Transaction.swift in Sources */,
+				3D0732EB220B8C67001CE374 /* TransLedger.swift in Sources */,
 				3D766907220A2325005883E9 /* TransactionTableViewCell.swift in Sources */,
 				3D766904220A1C16005883E9 /* TransactionsViewController.swift in Sources */,
 			);
