@@ -14,7 +14,10 @@ class TransactionsViewController: UIViewController, UITableViewDataSource, UITab
     
     let ledger = TransactionLedger.sharedInstance
     
-  
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     
     
     override func viewDidLoad() {

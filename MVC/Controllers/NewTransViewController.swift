@@ -9,12 +9,28 @@
 import UIKit
 
 class NewTransViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-
+    
+    
+    @IBOutlet weak var amountTextField: UITextField!
+    
+    @IBOutlet weak var notesTextField: UITextField!
+    
+    
+    @IBAction func submitButton(_ sender: Any) {
+        let amountString = amountTextField.text
+        guard let amountDouble = Double(amountString!) else {
+            print("Amount value assigned")
+            return
+            }
+        let notesString = notesTextField.text
         
+        let transaction = Transaction(amount: amountDouble , date: Date(), notes: notesString)
+        
+        let ledger = TransactionLedger.sharedInstance
+        ledger.transactions.append(transaction)
+        print(ledger.transactions)
+        
+        navigationController?.popViewController(animated: true)
     }
     
 
