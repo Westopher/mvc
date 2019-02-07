@@ -63,7 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				3D7668FF220A1B34005883E9 /* Models */,
-				3D7668ED220A1AB5005883E9 /* AppDelegate.swift */,
+				3D766902220A1BE8005883E9 /* Controllers */,
+				3D766905220A22F6005883E9 /* Views */,
 				3D7668F1220A1AB5005883E9 /* Main.storyboard */,
 				3D7668F4220A1AB7005883E9 /* Assets.xcassets */,
 				3D7668F6220A1AB7005883E9 /* LaunchScreen.storyboard */,
@@ -77,8 +78,6 @@
 			children = (
 				3D766900220A1B4A005883E9 /* Transaction.swift */,
 				3D0732EA220B8C67001CE374 /* TransLedger.swift */,
-				3D766905220A22F6005883E9 /* Views */,
-				3D766902220A1BE8005883E9 /* Controllers */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -95,6 +94,7 @@
 		3D766905220A22F6005883E9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3D7668ED220A1AB5005883E9 /* AppDelegate.swift */,
 				3D766906220A2325005883E9 /* TransactionTableViewCell.swift */,
 			);
 			path = Views;
